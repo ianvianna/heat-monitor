@@ -1,13 +1,13 @@
 #include <ESP8266WiFi.h>
 #include <PubSubClient.h>
 
-const char* ssid = "Longboard 22";      // Substitua pelo seu SSID
-const char* password = "surf1213";  // Substitua pela sua senha Wi-Fi
+const char* ssid = "Longboard 22";
+const char* password = "surf1213";
 
-const char* mqtt_server = "test.mosquitto.org";  // Endereço do Broker MQTT
-const int mqtt_port = 1883;                   // Porta do broker
-const char* mqtt_user = "";            // Usuário do broker MQTT (se necessário)
-const char* mqtt_pass = "";              // Senha do broker MQTT (se necessário)
+const char* mqtt_server = "test.mosquitto.org";
+const int mqtt_port = 1883;
+const char* mqtt_user = "";
+const char* mqtt_pass = "";
 
 WiFiClient espClient;
 PubSubClient client(espClient);
